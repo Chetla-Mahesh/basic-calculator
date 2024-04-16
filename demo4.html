@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head><title>calculator</title>
+    <link rel="stylesheet" href="demo4.css">
+    </head>
+    <body>
+        <p id="display" class="js-display"></p>
+       <p>
+        <button onclick="update('1');">1</button>
+       <button onclick="update('2')">2</button>
+       <button onclick="update('3')">3</button>
+       </p>
+       <p>
+        <button onclick="update('4')">4</button>
+       <button onclick="update('5')">5</button>
+       <button onclick="update('6')">6</button>
+       </p>
+       <p>
+        <button onclick="update('7')">7</button>
+        <button onclick="update('8')">8</button>
+        <button onclick="update('9')">9</button>
+        </p>
+        <p>
+        <button onclick="update('0')">0</button>
+       <button  id="dot" onclick="update('.')">.</button>
+        <button id="plus" onclick="update('+')">+</button>
+        </p>
+        <p>
+       <button id="one" onclick="update('-')">-</button>
+       <button id="one" onclick="update('*')">*</button>
+       <button id="one" onclick="update('/')">/</button>
+        </p>
+       <button id="equalsto" onclick="calculation=eval(calculation);
+       console.log(calculation);
+       document.querySelector('.js-display').innerHTML=`${calculation}`
+       localStorage.setItem('calculation',calculation)">=</button>
+       <button id="sec" onclick="calculation='';
+       console.log(calculation);
+       document.querySelector('.js-display').innerHTML=`${calculation}`
+       localStorage.setItem('calculation',calculation)">clear</button>
+       <script>
+         console.log(localStorage.getItem('calculation'))
+        let calculation=localStorage.getItem('calculation') || '';
+        document.querySelector('.js-display').innerHTML=`${calculation}.0`
+        function update(value)
+        {
+            calculation+=value;
+       console.log(calculation)
+       document.querySelector('.js-display').innerHTML=`${calculation}`
+        }
+       </script>
+    </body>
+</html>
+

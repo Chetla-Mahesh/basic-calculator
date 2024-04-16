@@ -1,0 +1,36 @@
+body{
+    background-color: #353535;
+    text-align: center;
+}
+button{
+    background-color:lightblue;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius:60px;
+    margin: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#dot{
+    padding: 15px 24px;
+}
+#plus{
+    background-color: orange;
+}
+#one{
+    background-color: orange;
+    padding: 15px 23px;
+}
+#equalsto{
+    background-color:orangered;
+}
+#sec{
+    background-color:yellow;
+    margin-left: 25px;
+}
+#display{
+    background-color: lightpink;
+    padding:10px;
+    font-size: 35px;
+    font-weight: bold;
+}
